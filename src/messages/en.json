@@ -1,0 +1,64 @@
+{
+  "app": {
+    "name": "SaúdeFoz",
+    "tagline": "Your SUS guide in Foz do Iguaçu",
+    "disclaimer": "Informational guidance only. Does not replace professional medical care. In emergencies call SAMU 192."
+  },
+  "nav": {
+    "home": "Home",
+    "sections": "Health topics",
+    "ubs": "Find UBS",
+    "about": "About us"
+  },
+  "emergency": {
+    "samuLabel": "Emergency",
+    "callSamu": "Call SAMU 192"
+  },
+  "section": {
+    "noContent": "Content not yet available in this section.",
+    "useOfficialLinks": "Use the official links below in the meantime.",
+    "readOfficial": "Read official source",
+    "officialSources": "Official sources",
+    "translateWithGoogle": "Translate with Google",
+    "ptNoticeTitle": "Official content in Portuguese",
+    "ptNoticeBody": "The original content from the Brazilian Ministry of Health is in Portuguese. Use the 'Translate with Google' button to read it in your language.",
+    "aiTranslated": "AI-translated"
+  },
+  "ubs": {
+    "title": "Find a UBS",
+    "subtitle": "Basic Health Units in Foz do Iguaçu",
+    "searchPlaceholder": "Search by name or neighborhood...",
+    "noResults": "No results found",
+    "filter": {
+      "all": "All",
+      "dentist": "With dentist",
+      "pediatrician": "With pediatrician",
+      "gynecologist": "With gynecologist"
+    }
+  },
+  "about": {
+    "title": "About SaúdeFoz",
+    "paragraph1": "SaúdeFoz is an informational project created to help immigrants in Foz do Iguaçu and the Triple Frontier region access Brazil's Unified Health System (SUS).",
+    "paragraph2": "All information comes from official sources of Brazil's Ministry of Health (gov.br) and is updated weekly.",
+    "paragraph3": "This is a non-profit project with no official affiliation to the Brazilian government.",
+    "disclaimerTitle": "Important notice",
+    "disclaimerBody": "This website is informational only. It does not replace professional medical care. In case of emergency call SAMU 192 or go to the nearest UPA."
+  },
+  "sections": {
+    "primeros-pasos": { "title": "First steps on arrival", "description": "How to get your SUS card without CPF, what documents you need" },
+    "embarazo": { "title": "Pregnancy and prenatal care", "description": "Free consultations, exams and delivery at SUS" },
+    "ninos-vacunacion": { "title": "Children and vaccination", "description": "National schedule and where to vaccinate your children" },
+    "salud-mujer": { "title": "Women's health", "description": "Pap smear, mammogram, contraception" },
+    "diabetes-hipertension": { "title": "Diabetes and hypertension", "description": "Follow-up, free medication, Hiperdia" },
+    "adultos-mayores": { "title": "Older adults", "description": "Care, specific vaccines, rights" },
+    "salud-mental": { "title": "Mental health", "description": "CAPS, free psychologist and psychiatrist" },
+    "adicciones": { "title": "Alcohol and drugs", "description": "CAPS AD — confidential and free support" },
+    "ist-vih": { "title": "STIs, HIV and PrEP", "description": "Rapid test, treatment, prevention" },
+    "salud-viajero": { "title": "Dengue and yellow fever", "description": "Prevention and care in the triple border" },
+    "salud-bucal": { "title": "Dental health", "description": "Free dentist at UBS" },
+    "discapacidad-bpc": { "title": "Disability and BPC", "description": "Benefits and specialized services" },
+    "violencia": { "title": "Domestic violence", "description": "Call 180 · Women's House · CREAS" },
+    "farmacia-popular": { "title": "Popular Pharmacy", "description": "Free or discounted medication" },
+    "urgencias": { "title": "Urgent and emergency care", "description": "SAMU 192 · UPA · when to go to hospital" }
+  }
+}

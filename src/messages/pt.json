@@ -1,0 +1,64 @@
+{
+  "app": {
+    "name": "SaúdeFoz",
+    "tagline": "Seu guia do SUS em Foz do Iguaçu",
+    "disclaimer": "Informação orientativa. Não substitui atendimento médico profissional. Em emergência ligue para o SAMU 192."
+  },
+  "nav": {
+    "home": "Início",
+    "sections": "Temas de saúde",
+    "ubs": "Encontrar UBS",
+    "about": "Sobre nós"
+  },
+  "emergency": {
+    "samuLabel": "Emergência",
+    "callSamu": "Ligar para o SAMU 192"
+  },
+  "section": {
+    "noContent": "Conteúdo ainda não disponível nesta seção.",
+    "useOfficialLinks": "Use os links oficiais abaixo enquanto isso.",
+    "readOfficial": "Ler fonte oficial",
+    "officialSources": "Fontes oficiais",
+    "translateWithGoogle": "Traduzir com o Google",
+    "ptNoticeTitle": "Conteúdo oficial",
+    "ptNoticeBody": "Este conteúdo é do Ministério da Saúde do Brasil.",
+    "aiTranslated": "Tradução automática por IA"
+  },
+  "ubs": {
+    "title": "Encontrar UBS",
+    "subtitle": "Unidades Básicas de Saúde em Foz do Iguaçu",
+    "searchPlaceholder": "Buscar por nome ou bairro...",
+    "noResults": "Nenhum resultado encontrado",
+    "filter": {
+      "all": "Todas",
+      "dentist": "Com dentista",
+      "pediatrician": "Com pediatra",
+      "gynecologist": "Com ginecologista"
+    }
+  },
+  "about": {
+    "title": "Sobre o SaúdeFoz",
+    "paragraph1": "SaúdeFoz é um projeto informativo criado para facilitar o acesso ao Sistema Único de Saúde (SUS) para imigrantes em Foz do Iguaçu e a região da Tríplice Fronteira.",
+    "paragraph2": "Todas as informações vêm de fontes oficiais do Ministério da Saúde do Brasil (gov.br) e são atualizadas semanalmente.",
+    "paragraph3": "Este projeto é sem fins lucrativos e não tem afiliação oficial com o governo brasileiro.",
+    "disclaimerTitle": "Aviso importante",
+    "disclaimerBody": "Este site é apenas informativo. Não substitui atendimento médico profissional. Em caso de emergência ligue para o SAMU 192 ou vá à UPA mais próxima."
+  },
+  "sections": {
+    "primeros-pasos": { "title": "Primeiros passos ao chegar", "description": "Como tirar o Cartão SUS sem CPF, quais documentos você precisa" },
+    "embarazo": { "title": "Gravidez e pré-natal", "description": "Consultas, exames e parto gratuitos no SUS" },
+    "ninos-vacunacion": { "title": "Crianças e vacinação", "description": "Calendário nacional e onde vacinar seus filhos" },
+    "salud-mujer": { "title": "Saúde da mulher", "description": "Papanicolau, mamografia, anticoncepção" },
+    "diabetes-hipertension": { "title": "Diabetes e hipertensão", "description": "Acompanhamento, medicamentos gratuitos, Hiperdia" },
+    "adultos-mayores": { "title": "Idosos", "description": "Cuidados, vacinas específicas, direitos" },
+    "salud-mental": { "title": "Saúde mental", "description": "CAPS, psicólogo e psiquiatra gratuitos" },
+    "adicciones": { "title": "Álcool e drogas", "description": "CAPS AD — apoio confidencial e gratuito" },
+    "ist-vih": { "title": "IST, HIV e PrEP", "description": "Teste rápido, tratamento, prevenção" },
+    "salud-viajero": { "title": "Dengue e febre amarela", "description": "Prevenção e atendimento na tríplice fronteira" },
+    "salud-bucal": { "title": "Saúde bucal", "description": "Dentista gratuito na UBS" },
+    "discapacidad-bpc": { "title": "Deficiência e BPC", "description": "Benefícios e serviços especializados" },
+    "violencia": { "title": "Violência doméstica", "description": "Ligue 180 · Casa da Mulher · CREAS" },
+    "farmacia-popular": { "title": "Farmácia Popular", "description": "Medicamentos grátis ou com desconto" },
+    "urgencias": { "title": "Urgências e emergências", "description": "SAMU 192 · UPA · quando ir ao hospital" }
+  }
+}

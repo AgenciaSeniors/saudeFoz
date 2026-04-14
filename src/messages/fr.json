@@ -1,0 +1,64 @@
+{
+  "app": {
+    "name": "SaúdeFoz",
+    "tagline": "Votre guide du SUS à Foz do Iguaçu",
+    "disclaimer": "Information à titre indicatif. Ne remplace pas un avis médical professionnel. En cas d'urgence appelez le SAMU 192."
+  },
+  "nav": {
+    "home": "Accueil",
+    "sections": "Sujets de santé",
+    "ubs": "Trouver une UBS",
+    "about": "À propos"
+  },
+  "emergency": {
+    "samuLabel": "Urgence",
+    "callSamu": "Appeler le SAMU 192"
+  },
+  "section": {
+    "noContent": "Contenu pas encore disponible dans cette section.",
+    "useOfficialLinks": "Utilisez les liens officiels ci-dessous en attendant.",
+    "readOfficial": "Lire la source officielle",
+    "officialSources": "Sources officielles",
+    "translateWithGoogle": "Traduire avec Google",
+    "ptNoticeTitle": "Contenu officiel en portugais",
+    "ptNoticeBody": "Le contenu original du Ministère de la Santé est en portugais. Utilisez le bouton 'Traduire avec Google' pour le lire dans votre langue.",
+    "aiTranslated": "Traduction automatique par IA"
+  },
+  "ubs": {
+    "title": "Trouver une UBS",
+    "subtitle": "Unités de santé de base à Foz do Iguaçu",
+    "searchPlaceholder": "Rechercher par nom ou quartier...",
+    "noResults": "Aucun résultat trouvé",
+    "filter": {
+      "all": "Toutes",
+      "dentist": "Avec dentiste",
+      "pediatrician": "Avec pédiatre",
+      "gynecologist": "Avec gynécologue"
+    }
+  },
+  "about": {
+    "title": "À propos de SaúdeFoz",
+    "paragraph1": "SaúdeFoz est un projet d'information créé pour faciliter l'accès au Système Unique de Santé (SUS) aux immigrants à Foz do Iguaçu et dans la région de la Triple Frontière.",
+    "paragraph2": "Toutes les informations proviennent de sources officielles du Ministère de la Santé du Brésil (gov.br) et sont mises à jour chaque semaine.",
+    "paragraph3": "Ce projet est à but non lucratif et n'a aucune affiliation officielle avec le gouvernement brésilien.",
+    "disclaimerTitle": "Avis important",
+    "disclaimerBody": "Ce site est uniquement informatif. Il ne remplace pas les soins médicaux professionnels. En cas d'urgence appelez le SAMU 192 ou rendez-vous à l'UPA la plus proche."
+  },
+  "sections": {
+    "primeros-pasos": { "title": "Premiers pas à l'arrivée", "description": "Comment obtenir votre Cartão SUS sans CPF, quels documents nécessaires" },
+    "embarazo": { "title": "Grossesse et suivi prénatal", "description": "Consultations, examens et accouchement gratuits au SUS" },
+    "ninos-vacunacion": { "title": "Enfants et vaccination", "description": "Calendrier national et où vacciner vos enfants" },
+    "salud-mujer": { "title": "Santé des femmes", "description": "Frottis, mammographie, contraception" },
+    "diabetes-hipertension": { "title": "Diabète et hypertension", "description": "Suivi, médicaments gratuits, Hiperdia" },
+    "adultos-mayores": { "title": "Personnes âgées", "description": "Soins, vaccins spécifiques, droits" },
+    "salud-mental": { "title": "Santé mentale", "description": "CAPS, psychologue et psychiatre gratuits" },
+    "adicciones": { "title": "Alcool et drogues", "description": "CAPS AD — soutien confidentiel et gratuit" },
+    "ist-vih": { "title": "IST, VIH et PrEP", "description": "Test rapide, traitement, prévention" },
+    "salud-viajero": { "title": "Dengue et fièvre jaune", "description": "Prévention et soins dans la triple frontière" },
+    "salud-bucal": { "title": "Santé bucco-dentaire", "description": "Dentiste gratuit à l'UBS" },
+    "discapacidad-bpc": { "title": "Handicap et BPC", "description": "Prestations et services spécialisés" },
+    "violencia": { "title": "Violence domestique", "description": "Ligue 180 · Casa da Mulher · CREAS" },
+    "farmacia-popular": { "title": "Pharmacie Populaire", "description": "Médicaments gratuits ou à prix réduit" },
+    "urgencias": { "title": "Urgences", "description": "SAMU 192 · UPA · quand aller à l'hôpital" }
+  }
+}
