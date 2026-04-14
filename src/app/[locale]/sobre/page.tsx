@@ -1,7 +1,13 @@
 import { useTranslations } from 'next-intl';
+import { unstable_setRequestLocale } from 'next-intl/server';
 import { AlertTriangle } from 'lucide-react';
 
-export default function SobrePage() {
+export default function SobrePage({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
+  unstable_setRequestLocale(locale);
   const t = useTranslations();
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 py-10">

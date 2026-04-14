@@ -1,10 +1,15 @@
 import { UBSFinder } from '@/components/UBSFinder';
 import { supabaseAdmin } from '@/lib/supabase/server';
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
 export const revalidate = 3600;
 
-export default async function UBSPage() {
+export default async function UBSPage({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
+  unstable_setRequestLocale(locale);
   const t = await getTranslations();
   const { data: ubsList } = await supabaseAdmin
     .from('ubs')

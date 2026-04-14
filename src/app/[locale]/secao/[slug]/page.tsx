@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { ArrowLeft, ExternalLink, Sparkles, ChevronRight } from 'lucide-react';
 import * as Icons from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import { unstable_setRequestLocale } from 'next-intl/server';
 import { SECTIONS, getSectionBySlug } from '@/lib/sections';
 import { supabaseAdmin } from '@/lib/supabase/server';
 import { TranslateButton } from '@/components/TranslateButton';
@@ -69,6 +70,7 @@ export default async function SectionPage({
 }: {
   params: { locale: string; slug: string };
 }) {
+  unstable_setRequestLocale(params.locale);
   const section = getSectionBySlug(params.slug);
   if (!section) notFound();
 
