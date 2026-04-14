@@ -41,10 +41,11 @@ export function UBSFinder({ initialUBS }: { initialUBS: UBS[] }) {
 
   return (
     <div>
-      <div className="relative mb-4">
+      {/* Search */}
+      <div className="relative mb-5">
         <Search
           size={18}
-          className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
+          className="absolute left-4 top-1/2 -translate-y-1/2 text-brand-muted"
           aria-hidden
         />
         <input
@@ -52,20 +53,21 @@ export function UBSFinder({ initialUBS }: { initialUBS: UBS[] }) {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder={t('searchPlaceholder')}
-          className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-sus-primary text-base"
+          className="w-full pl-11 pr-4 py-3.5 bg-white border border-slate-200 rounded-xl shadow-card focus:outline-none focus:border-brand-primary focus:shadow-glow text-base transition-all"
           aria-label={t('searchPlaceholder')}
         />
       </div>
 
-      <div className="flex flex-wrap gap-2 mb-6">
+      {/* Filter pills */}
+      <div className="flex flex-wrap gap-2 mb-7">
         {(['all', 'dentist', 'pediatrician', 'gynecologist'] as const).map((f) => (
           <button
             key={f}
             onClick={() => setFilter(f)}
-            className={`px-4 py-2 rounded-full text-sm font-medium border transition-colors ${
+            className={`px-4 py-2 rounded-full text-sm font-semibold border transition-all duration-200 ${
               filter === f
-                ? 'bg-sus-primary text-white border-sus-primary'
-                : 'bg-white text-gray-700 border-gray-300 hover:border-sus-primary'
+                ? 'bg-brand-primary text-white border-brand-primary shadow-sm'
+                : 'bg-white text-slate-600 border-slate-200 hover:border-brand-primary hover:text-brand-primary'
             }`}
           >
             {t(`filter.${f}`)}
@@ -73,45 +75,46 @@ export function UBSFinder({ initialUBS }: { initialUBS: UBS[] }) {
         ))}
       </div>
 
+      {/* Results */}
       {filtered.length === 0 ? (
-        <p className="text-gray-500 text-center py-10">{t('noResults')}</p>
+        <p className="text-brand-muted text-center py-12">{t('noResults')}</p>
       ) : (
         <ul className="space-y-4">
           {filtered.map((u) => (
             <li
               key={u.id}
-              className="bg-white border border-gray-200 rounded-lg p-5"
+              className="bg-white border border-slate-200/80 border-l-4 border-l-brand-primary rounded-xl p-5 shadow-card"
             >
-              <h3 className="font-bold text-lg text-gray-900">{u.name}</h3>
-              <p className="text-sm text-sus-primary font-medium mb-3">
+              <h3 className="font-semibold text-lg text-slate-900">{u.name}</h3>
+              <p className="text-sm text-brand-primary font-medium mb-3">
                 {u.neighborhood}
               </p>
-              <div className="space-y-1.5 text-sm text-gray-700">
-                <div className="flex items-start gap-2">
-                  <MapPin size={16} className="shrink-0 mt-0.5" aria-hidden />
+              <div className="space-y-2 text-sm text-slate-600">
+                <div className="flex items-start gap-2.5">
+                  <MapPin size={15} className="shrink-0 mt-0.5 text-brand-muted" aria-hidden />
                   <span>{u.address}</span>
                 </div>
                 {u.phone && (
-                  <div className="flex items-center gap-2">
-                    <Phone size={16} aria-hidden />
-                    <a href={`tel:${u.phone}`} className="hover:underline">
+                  <div className="flex items-center gap-2.5">
+                    <Phone size={15} className="text-brand-muted" aria-hidden />
+                    <a href={`tel:${u.phone}`} className="hover:underline text-brand-primary">
                       {u.phone}
                     </a>
                   </div>
                 )}
                 {u.hours && (
-                  <div className="flex items-center gap-2">
-                    <Clock size={16} aria-hidden />
+                  <div className="flex items-center gap-2.5">
+                    <Clock size={15} className="text-brand-muted" aria-hidden />
                     <span>{u.hours}</span>
                   </div>
                 )}
               </div>
               {u.services && u.services.length > 0 && (
-                <div className="flex flex-wrap gap-1.5 mt-3">
+                <div className="flex flex-wrap gap-1.5 mt-4">
                   {u.services.map((s) => (
                     <span
                       key={s}
-                      className="text-xs bg-gray-100 text-gray-700 px-2 py-0.5 rounded-full"
+                      className="text-xs bg-brand-light text-brand-primary px-2.5 py-1 rounded-full font-medium"
                     >
                       {s}
                     </span>

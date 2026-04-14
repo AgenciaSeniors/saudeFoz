@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: '#047857',
+  themeColor: '#0F766E',
   width: 'device-width',
   initialScale: 1,
 };
@@ -40,31 +40,39 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body className="min-h-screen flex flex-col">
+      <body className="min-h-screen flex flex-col bg-brand-surface">
         <NextIntlClientProvider messages={messages}>
           <EmergencyBar />
-          <header className="bg-white border-b border-gray-200 sticky top-8 z-40">
-            <div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
+
+          <header className="header-blur border-b border-slate-200/60 sticky top-8 z-40">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between gap-4">
               <Link
                 href={`/${locale}`}
-                className="flex items-center gap-2 font-bold text-sus-primary text-xl"
+                className="flex items-center gap-1 group"
               >
-                <span aria-hidden>🏥</span>
-                <span>SaúdeFoz</span>
+                <span className="font-display text-2xl text-brand-dark tracking-tight">
+                  Saúde
+                </span>
+                <span className="font-display text-2xl text-brand-primary tracking-tight">
+                  Foz
+                </span>
+                <span className="w-2 h-2 rounded-full bg-brand-accent ml-0.5 group-hover:scale-125 transition-transform" />
               </Link>
-              <nav className="flex items-center gap-4">
+
+              <nav className="flex items-center gap-2 sm:gap-4">
                 <Link
                   href={`/${locale}/ubs`}
-                  className="text-sm font-medium hover:text-sus-primary"
+                  className="text-sm font-semibold text-slate-600 hover:text-brand-primary transition-colors px-3 py-1.5 rounded-lg hover:bg-brand-light"
                 >
                   UBS
                 </Link>
                 <Link
                   href={`/${locale}/sobre`}
-                  className="text-sm font-medium hover:text-sus-primary"
+                  className="text-sm font-semibold text-slate-600 hover:text-brand-primary transition-colors px-3 py-1.5 rounded-lg hover:bg-brand-light"
                 >
-                  ℹ️
+                  Info
                 </Link>
+                <div className="w-px h-5 bg-slate-200" />
                 <LanguageSwitcher currentLocale={locale as Locale} />
               </nav>
             </div>
@@ -74,13 +82,17 @@ export default async function LocaleLayout({
 
           <DisclaimerBanner />
 
-          <footer className="bg-gray-900 text-gray-300 text-sm py-8 px-4">
-            <div className="max-w-5xl mx-auto">
-              <p className="font-bold text-white mb-2">SaúdeFoz</p>
-              <p className="mb-2">
+          <footer className="bg-gradient-to-b from-slate-900 to-slate-950 text-slate-400 py-10 px-4 sm:px-6">
+            <div className="max-w-6xl mx-auto">
+              <div className="flex items-center gap-1 mb-4">
+                <span className="font-display text-xl text-white">Saúde</span>
+                <span className="font-display text-xl text-teal-400">Foz</span>
+                <span className="w-1.5 h-1.5 rounded-full bg-orange-400 ml-0.5" />
+              </div>
+              <p className="text-sm mb-2 max-w-md">
                 Proyecto informativo sin fines de lucro. No sustituye atención médica.
               </p>
-              <p className="text-xs text-gray-500">
+              <p className="text-xs text-slate-600">
                 Contenido adaptado del portal oficial del SUS (gov.br).
               </p>
             </div>

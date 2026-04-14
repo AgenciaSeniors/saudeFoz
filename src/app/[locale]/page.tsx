@@ -10,35 +10,44 @@ export default function HomePage({
   const t = useTranslations();
 
   return (
-    <div className="max-w-5xl mx-auto px-4 py-8">
-      <section className="text-center mb-10">
-        <h1 className="text-4xl font-bold text-gray-900 mb-3">
-          {t('app.name')}
-        </h1>
-        <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-          {t('app.tagline')}
-        </p>
+    <>
+      {/* Hero */}
+      <section className="hero-mesh noise-overlay relative overflow-hidden">
+        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 pt-16 pb-14 sm:pt-20 sm:pb-18">
+          <div className="max-w-2xl">
+            <h1 className="font-display text-4xl sm:text-5xl text-slate-900 mb-4 tracking-tight">
+              {t('app.name')}
+            </h1>
+            <p className="text-lg sm:text-xl text-brand-muted leading-relaxed">
+              {t('app.tagline')}
+            </p>
+          </div>
+        </div>
+        {/* Decorative bottom fade */}
+        <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-brand-surface to-transparent" />
       </section>
 
-      <section aria-labelledby="sections-heading">
+      {/* Sections grid */}
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 pb-16 -mt-4 relative z-10" aria-labelledby="sections-heading">
         <h2
           id="sections-heading"
-          className="text-2xl font-bold text-gray-900 mb-4"
+          className="text-sm font-semibold text-brand-muted uppercase tracking-wider mb-6"
         >
           {t('nav.sections')}
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-          {SECTIONS.sort((a, b) => a.priority - b.priority).map((section) => (
+          {SECTIONS.sort((a, b) => a.priority - b.priority).map((section, i) => (
             <SectionCard
               key={section.slug}
               section={section}
               locale={locale}
               title={t(`sections.${section.slug}.title`)}
               description={t(`sections.${section.slug}.description`)}
+              index={i}
             />
           ))}
         </div>
       </section>
-    </div>
+    </>
   );
 }
