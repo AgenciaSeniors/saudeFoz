@@ -1,8 +1,8 @@
 {
   "app": {
     "name": "SaúdeFoz",
-    "tagline": "Ne SUS rape Foz do Iguaçu-pe",
-    "disclaimer": "Marandu ñemoherakuã. Noñembyesái médico ñangareko. Ñembyai aja ehenói SAMU 192."
+    "tagline": "Eike Brasil tesãi rendápe (SUS) Foz do Iguaçu-pe. Marandu oficial ne ñe'ẽme.",
+    "disclaimer": "Marandu ñemoherakuã mante. Noñembyesái médico ñangareko. Ñembyai aja: SAMU 192."
   },
   "nav": {
     "home": "Ñepyrũha",
@@ -15,50 +15,50 @@
     "callSamu": "Ehenói SAMU 192"
   },
   "section": {
-    "noContent": "Marandu ndaipóri gueteri ko'ápe.",
-    "useOfficialLinks": "Eipuru umi joaju oficial yvýgui.",
-    "readOfficial": "Emoñe'ẽ moñepyrũha oficial",
+    "noContent": "Ndaipóri gueteri marandu ko'ápe.",
+    "useOfficialLinks": "Kóva aja, eipuru umi joaju oficial yvýgui.",
+    "readOfficial": "Ehecha moñepyrũha oficial",
     "officialSources": "Moñepyrũha oficial-kuéra",
     "translateWithGoogle": "Embohasa Google reheve",
-    "ptNoticeTitle": "Marandu oficial portugués-pe",
-    "ptNoticeBody": "Ko marandu Brasil Ministério de Saúde-gui ha oĩ portugués-pe. Eipuru votõ 'Embohasa Google reheve' emoñe'ẽ hag̃ua ne ñe'ẽme.",
-    "aiTranslated": "Embohasa mba'e'ikatúva rupive"
+    "ptNoticeTitle": "Marandu portugués-pe",
+    "ptNoticeBody": "Ko marandu Brasil Ministério de Saúde-gui ha oĩ portugués-pe. Eipuru votõ embohasa hag̃ua ne ñe'ẽme.",
+    "aiTranslated": "Oñembohasa ijeheguíva"
   },
   "ubs": {
-    "title": "Eheka UBS",
-    "subtitle": "Tesãi Róga Foz do Iguaçu-pe",
+    "title": "Eheka peteĩ UBS",
+    "subtitle": "Eheka ne Tesãi Róga ag̃uíva Foz do Iguaçu-pe",
     "searchPlaceholder": "Eheka téra térã távami rupi...",
-    "noResults": "Ndaipóri mba'eve ojejuhúva",
+    "noResults": "Ndaipóri mba'eve ojejuhúva. Eipuru ambue ñe'ẽ.",
     "filter": {
       "all": "Opavave",
-      "dentist": "Dentista ndive",
-      "pediatrician": "Mitã médico ndive",
-      "gynecologist": "Kuña médico ndive"
+      "dentist": "Dentista",
+      "pediatrician": "Mitã médico",
+      "gynecologist": "Kuña médico"
     }
   },
   "about": {
     "title": "SaúdeFoz rehegua",
-    "paragraph1": "SaúdeFoz ha'e peteĩ tembiapo marandu me'ẽha oipytyvõva umi tetã ambuégui oúva Foz do Iguaçu ha Mbohapy Frontera pegua oike hag̃ua SUS-pe.",
-    "paragraph2": "Opa marandu ou Brasil Ministério de Saúde oficial-gui (gov.br) ha oñemyasãi arapokõindy jave.",
-    "paragraph3": "Ko tembiapo ndaha'éi pirapire ojehupytyha, ndoguerekói mba'eve Brasil retã ndive.",
+    "paragraph1": "SaúdeFoz ha'e peteĩ tembiapo pirapire'ỹre oipytyvõva umi tetã ambuégui oúva Foz do Iguaçu ha Mbohapy Frontera pegua oike hag̃ua SUS-pe.",
+    "paragraph2": "Opa marandu ou Brasil Ministério de Saúde oficial-gui (gov.br) ha oñemyasãi ijeheguíva arapokõindy jave.",
+    "paragraph3": "Ko tembiapo ndoguerekói mba'eve Brasil retã ndive ha ani avei mba'eve tesãi rendá ndive.",
     "disclaimerTitle": "Marandu iporãva",
     "disclaimerBody": "Ko kuatia rogue marandu mante me'ẽha. Noñembyesái médico ñangareko. Ñembyai aja ehenói SAMU 192 térã etereho UPA ag̃uívape."
   },
   "sections": {
-    "primeros-pasos": { "title": "Ñepyrũha eguahẽvo", "description": "Mba'éichapa rejahupyty ne Cartão SUS CPF'ỹre" },
-    "embarazo": { "title": "Puru'a ha prenatal", "description": "Ñehesa'ỹijo ha membyramo reiete SUS-pe" },
-    "ninos-vacunacion": { "title": "Mitãnguéra ha vakunasiõ", "description": "Calendario nacional ha moõpa emovakuna ne mitãnguéra" },
-    "salud-mujer": { "title": "Kuña tesãi", "description": "Papanicolau, mamografía, ñembyai'ỹre" },
-    "diabetes-hipertension": { "title": "Diabetes ha hipertensiõ", "description": "Ñangareko, pohã reiete, Hiperdia" },
-    "adultos-mayores": { "title": "Tujakuéra", "description": "Ñangareko, vakunasiõ, derecho" },
-    "salud-mental": { "title": "Akã tesãi", "description": "CAPS, psicólogo ha psiquiatra reiete" },
-    "adicciones": { "title": "Kaguy ha marihuana", "description": "CAPS AD — pytyvõ ñemigua ha reiete" },
-    "ist-vih": { "title": "IST, VIH ha PrEP", "description": "Tembiecharã pya'e, ñepohãnó" },
-    "salud-viajero": { "title": "Dengue ha fiebre amarilla", "description": "Ñeñangareko Mbohapy Frontera-pe" },
-    "salud-bucal": { "title": "Juru tesãi", "description": "Dentista reiete UBS-pe" },
-    "discapacidad-bpc": { "title": "Ikatu'ỹva ha BPC", "description": "Pytyvõ ha tembiapo especializado" },
-    "violencia": { "title": "Óga ñembyai", "description": "Ligue 180 · Casa da Mulher · CREAS" },
-    "farmacia-popular": { "title": "Farmacia Popular", "description": "Pohã reiete térã hepyve'ỹva" },
-    "urgencias": { "title": "Ñembyai ha pya'e", "description": "SAMU 192 · UPA · araka'épa rehóta hospital-pe" }
+    "primeros-pasos": { "title": "Ñepyrũha eguahẽvo", "description": "Ejapyhy ne Cartão SUS CPF'ỹre ha eikuaa ne derecho" },
+    "embarazo": { "title": "Puru'a ha prenatal", "description": "Ñehesa'ỹijo ha membyramo reiete SUS rupive" },
+    "ninos-vacunacion": { "title": "Mitãnguéra ha vakunasiõ", "description": "Vakuna calendario ha moõpa emovakuna ne mitãnguéra" },
+    "salud-mujer": { "title": "Kuña tesãi", "description": "Papanicolau, mamografía ha ñembyai'ỹre reiete" },
+    "diabetes-hipertension": { "title": "Diabetes ha hipertensiõ", "description": "Médico ñangareko ha pohã reiete (Hiperdia)" },
+    "adultos-mayores": { "title": "Tujakuéra", "description": "Ñangareko especializado, vakunasiõ ha derecho" },
+    "salud-mental": { "title": "Akã tesãi", "description": "Psicólogo ha psiquiatra reiete CAPS-pe" },
+    "adicciones": { "title": "Kaguy ha marihuana", "description": "Pytyvõ ñemigua ha reiete CAPS AD-pe" },
+    "ist-vih": { "title": "IST, VIH ha PrEP", "description": "Tembiecharã pya'e reiete, ñepohãnó ha ñeñangareko" },
+    "salud-viajero": { "title": "Dengue ha fiebre amarilla", "description": "Mba'éichapa ñeñangarekóta ha moõpa reñeatende frontera-pe" },
+    "salud-bucal": { "title": "Juru tesãi", "description": "Dentista reiete ne UBS ag̃uívape" },
+    "discapacidad-bpc": { "title": "Ikatu'ỹva ha BPC", "description": "Pytyvõ social ha tembiapo especializado" },
+    "violencia": { "title": "Óga ñembyai", "description": "Pytyvõ pya'e: Ligue 180 ha Casa da Mulher" },
+    "farmacia-popular": { "title": "Farmacia Popular", "description": "Pohã reiete térã hepyve'ỹva gobierno-gui" },
+    "urgencias": { "title": "Ñembyai ha pya'e", "description": "SAMU 192, UPA ha araka'épa rehóta hospital-pe" }
   }
 }

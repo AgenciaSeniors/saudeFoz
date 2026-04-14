@@ -1,8 +1,8 @@
 {
   "app": {
     "name": "SaúdeFoz",
-    "tagline": "Seu guia do SUS em Foz do Iguaçu",
-    "disclaimer": "Informação orientativa. Não substitui atendimento médico profissional. Em emergência ligue para o SAMU 192."
+    "tagline": "Acesse o sistema de saúde brasileiro (SUS) em Foz do Iguaçu. Informação oficial no seu idioma.",
+    "disclaimer": "Informação orientativa. Não substitui atendimento médico. Em emergência: SAMU 192."
   },
   "nav": {
     "home": "Início",
@@ -15,50 +15,50 @@
     "callSamu": "Ligar para o SAMU 192"
   },
   "section": {
-    "noContent": "Conteúdo ainda não disponível nesta seção.",
-    "useOfficialLinks": "Use os links oficiais abaixo enquanto isso.",
-    "readOfficial": "Ler fonte oficial",
+    "noContent": "Ainda não há artigos nesta seção.",
+    "useOfficialLinks": "Enquanto isso, consulte as fontes oficiais abaixo.",
+    "readOfficial": "Ver fonte oficial",
     "officialSources": "Fontes oficiais",
     "translateWithGoogle": "Traduzir com o Google",
     "ptNoticeTitle": "Conteúdo oficial",
-    "ptNoticeBody": "Este conteúdo é do Ministério da Saúde do Brasil.",
-    "aiTranslated": "Tradução automática por IA"
+    "ptNoticeBody": "Este conteúdo vem do Ministério da Saúde do Brasil.",
+    "aiTranslated": "Traduzido automaticamente"
   },
   "ubs": {
-    "title": "Encontrar UBS",
-    "subtitle": "Unidades Básicas de Saúde em Foz do Iguaçu",
+    "title": "Encontrar uma UBS",
+    "subtitle": "Busque a Unidade Básica de Saúde mais perto de você em Foz do Iguaçu",
     "searchPlaceholder": "Buscar por nome ou bairro...",
-    "noResults": "Nenhum resultado encontrado",
+    "noResults": "Nenhum resultado encontrado. Tente outro termo.",
     "filter": {
       "all": "Todas",
-      "dentist": "Com dentista",
-      "pediatrician": "Com pediatra",
-      "gynecologist": "Com ginecologista"
+      "dentist": "Dentista",
+      "pediatrician": "Pediatra",
+      "gynecologist": "Ginecologista"
     }
   },
   "about": {
     "title": "Sobre o SaúdeFoz",
-    "paragraph1": "SaúdeFoz é um projeto informativo criado para facilitar o acesso ao Sistema Único de Saúde (SUS) para imigrantes em Foz do Iguaçu e a região da Tríplice Fronteira.",
-    "paragraph2": "Todas as informações vêm de fontes oficiais do Ministério da Saúde do Brasil (gov.br) e são atualizadas semanalmente.",
-    "paragraph3": "Este projeto é sem fins lucrativos e não tem afiliação oficial com o governo brasileiro.",
+    "paragraph1": "SaúdeFoz é um projeto sem fins lucrativos que facilita o acesso ao Sistema Único de Saúde (SUS) para imigrantes em Foz do Iguaçu e na Tríplice Fronteira.",
+    "paragraph2": "Todas as informações vêm de fontes oficiais do Ministério da Saúde do Brasil (gov.br) e são atualizadas semanalmente de forma automática.",
+    "paragraph3": "Este projeto não tem afiliação oficial com o governo brasileiro nem com nenhuma instituição de saúde.",
     "disclaimerTitle": "Aviso importante",
-    "disclaimerBody": "Este site é apenas informativo. Não substitui atendimento médico profissional. Em caso de emergência ligue para o SAMU 192 ou vá à UPA mais próxima."
+    "disclaimerBody": "Este site é apenas informativo. Não substitui atendimento médico profissional. Em emergência ligue para o SAMU 192 ou vá à UPA mais próxima."
   },
   "sections": {
-    "primeros-pasos": { "title": "Primeiros passos ao chegar", "description": "Como tirar o Cartão SUS sem CPF, quais documentos você precisa" },
-    "embarazo": { "title": "Gravidez e pré-natal", "description": "Consultas, exames e parto gratuitos no SUS" },
-    "ninos-vacunacion": { "title": "Crianças e vacinação", "description": "Calendário nacional e onde vacinar seus filhos" },
-    "salud-mujer": { "title": "Saúde da mulher", "description": "Papanicolau, mamografia, anticoncepção" },
-    "diabetes-hipertension": { "title": "Diabetes e hipertensão", "description": "Acompanhamento, medicamentos gratuitos, Hiperdia" },
-    "adultos-mayores": { "title": "Idosos", "description": "Cuidados, vacinas específicas, direitos" },
-    "salud-mental": { "title": "Saúde mental", "description": "CAPS, psicólogo e psiquiatra gratuitos" },
-    "adicciones": { "title": "Álcool e drogas", "description": "CAPS AD — apoio confidencial e gratuito" },
-    "ist-vih": { "title": "IST, HIV e PrEP", "description": "Teste rápido, tratamento, prevenção" },
-    "salud-viajero": { "title": "Dengue e febre amarela", "description": "Prevenção e atendimento na tríplice fronteira" },
-    "salud-bucal": { "title": "Saúde bucal", "description": "Dentista gratuito na UBS" },
-    "discapacidad-bpc": { "title": "Deficiência e BPC", "description": "Benefícios e serviços especializados" },
-    "violencia": { "title": "Violência doméstica", "description": "Ligue 180 · Casa da Mulher · CREAS" },
-    "farmacia-popular": { "title": "Farmácia Popular", "description": "Medicamentos grátis ou com desconto" },
-    "urgencias": { "title": "Urgências e emergências", "description": "SAMU 192 · UPA · quando ir ao hospital" }
+    "primeros-pasos": { "title": "Primeiros passos ao chegar", "description": "Tire seu Cartão SUS sem CPF e conheça seus direitos" },
+    "embarazo": { "title": "Gravidez e pré-natal", "description": "Consultas, exames e parto gratuitos pelo SUS" },
+    "ninos-vacunacion": { "title": "Crianças e vacinação", "description": "Calendário de vacinas e onde vacinar seus filhos" },
+    "salud-mujer": { "title": "Saúde da mulher", "description": "Papanicolau, mamografia e anticoncepção gratuita" },
+    "diabetes-hipertension": { "title": "Diabetes e hipertensão", "description": "Acompanhamento médico e medicamentos gratuitos (Hiperdia)" },
+    "adultos-mayores": { "title": "Idosos", "description": "Atendimento especializado, vacinas e direitos" },
+    "salud-mental": { "title": "Saúde mental", "description": "Psicólogo e psiquiatra gratuitos nos CAPS" },
+    "adicciones": { "title": "Álcool e drogas", "description": "Apoio confidencial e gratuito no CAPS AD" },
+    "ist-vih": { "title": "IST, HIV e PrEP", "description": "Teste rápido gratuito, tratamento e prevenção" },
+    "salud-viajero": { "title": "Dengue e febre amarela", "description": "Como prevenir e onde se atender na fronteira" },
+    "salud-bucal": { "title": "Saúde bucal", "description": "Dentista gratuito na UBS mais perto de você" },
+    "discapacidad-bpc": { "title": "Deficiência e BPC", "description": "Benefícios sociais e serviços especializados" },
+    "violencia": { "title": "Violência doméstica", "description": "Ajuda imediata: Ligue 180 e Casa da Mulher" },
+    "farmacia-popular": { "title": "Farmácia Popular", "description": "Medicamentos grátis ou com desconto do governo" },
+    "urgencias": { "title": "Urgências e emergências", "description": "SAMU 192, UPA e quando ir ao hospital" }
   }
 }

@@ -103,40 +103,38 @@ function SectionPageClient({
     contents.some((c) => !resolveContent(c, locale).translated);
 
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8">
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
       {/* Breadcrumb */}
-      <nav className="flex items-center gap-1.5 text-sm text-brand-muted mb-8">
+      <nav className="flex items-center gap-1.5 text-xs sm:text-sm text-brand-muted mb-6 sm:mb-8">
         <Link
           href={`/${locale}`}
-          className="hover:text-brand-primary transition-colors"
+          className="hover:text-brand-primary transition-colors cursor-pointer min-h-[44px] flex items-center"
         >
           {t('nav.home')}
         </Link>
-        <ChevronRight size={14} aria-hidden />
-        <span className="text-slate-900 font-medium">
+        <ChevronRight size={14} aria-hidden className="shrink-0" />
+        <span className="text-slate-900 font-medium truncate">
           {t(`sections.${section.slug}.title`)}
         </span>
       </nav>
 
       {/* Section header */}
-      <header className="mb-8">
-        <div className="flex items-center gap-4 mb-3">
+      <header className="mb-6 sm:mb-8">
+        <div className="flex items-center gap-3 sm:gap-4 mb-2 sm:mb-3">
           <div
             className={cn(
-              'w-12 h-12 rounded-xl flex items-center justify-center',
+              'shrink-0 w-10 h-10 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center',
               section.iconBg,
               section.textColor
             )}
           >
             <Icon size={24} aria-hidden />
           </div>
-          <div>
-            <h1 className="font-display text-3xl sm:text-4xl text-slate-900 tracking-tight">
-              {t(`sections.${section.slug}.title`)}
-            </h1>
-          </div>
+          <h1 className="font-display text-2xl sm:text-3xl lg:text-4xl text-slate-900 tracking-tight leading-tight">
+            {t(`sections.${section.slug}.title`)}
+          </h1>
         </div>
-        <p className="text-brand-muted text-lg leading-relaxed max-w-2xl">
+        <p className="text-brand-muted text-base sm:text-lg leading-relaxed max-w-2xl">
           {t(`sections.${section.slug}.description`)}
         </p>
       </header>
@@ -154,37 +152,37 @@ function SectionPageClient({
           <p className="text-sm text-amber-700">{t('section.useOfficialLinks')}</p>
         </div>
       ) : (
-        <div className="space-y-5">
+        <div className="space-y-4 sm:space-y-5">
           {contents.map((content) => {
             const resolved = resolveContent(content, locale);
             return (
               <article
                 key={content.id}
                 className={cn(
-                  'bg-white rounded-xl border border-slate-200/80 border-l-4 p-6',
+                  'bg-white rounded-xl border border-slate-200/80 border-l-4 p-4 sm:p-6',
                   'shadow-card',
                   section.accentColor
                 )}
               >
                 {resolved.title && (
-                  <h2 className="font-semibold text-xl text-slate-900 mb-3 leading-snug">
+                  <h2 className="font-semibold text-lg sm:text-xl text-slate-900 mb-2 sm:mb-3 leading-snug">
                     {resolved.title}
                   </h2>
                 )}
                 {resolved.summary && (
-                  <div className="prose prose-sm max-w-none text-slate-600 whitespace-pre-line mb-4 leading-relaxed">
+                  <div className="prose prose-sm max-w-none text-slate-600 whitespace-pre-line mb-3 sm:mb-4 leading-relaxed">
                     {resolved.summary}
                   </div>
                 )}
 
                 {resolved.translated && (
-                  <p className="text-xs text-brand-muted mb-3 flex items-center gap-1.5 bg-teal-50 text-teal-700 rounded-full px-3 py-1 w-fit">
+                  <p className="text-xs mb-3 flex items-center gap-1.5 bg-teal-50 text-teal-700 rounded-full px-3 py-1 w-fit">
                     <Sparkles size={12} aria-hidden />
                     {t('section.aiTranslated')}
                   </p>
                 )}
 
-                <div className="flex flex-wrap gap-3 items-center">
+                <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 sm:items-center">
                   {!resolved.translated && resolved.summary && (
                     <TranslateButton
                       text={`${resolved.title ?? ''}\n\n${resolved.summary}`}
@@ -195,7 +193,7 @@ function SectionPageClient({
                     href={content.source_url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-brand-primary font-medium text-sm hover:underline"
+                    className="inline-flex items-center gap-2 text-brand-primary font-medium text-sm hover:underline cursor-pointer min-h-[44px]"
                   >
                     {t('section.readOfficial')}
                     <ExternalLink size={14} />
@@ -208,8 +206,8 @@ function SectionPageClient({
       )}
 
       {/* Official sources */}
-      <section className="mt-12 bg-white rounded-xl border border-slate-200/80 p-6 shadow-card">
-        <h3 className="font-semibold text-slate-900 mb-3 text-sm uppercase tracking-wider">
+      <section className="mt-8 sm:mt-12 bg-white rounded-xl border border-slate-200/80 p-4 sm:p-6 shadow-card">
+        <h3 className="font-semibold text-slate-900 mb-3 text-xs sm:text-sm uppercase tracking-wider">
           {t('section.officialSources')}
         </h3>
         <ul className="space-y-2">
@@ -219,7 +217,7 @@ function SectionPageClient({
                 href={url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-brand-primary hover:underline break-all text-sm"
+                className="text-brand-primary hover:underline break-all text-sm cursor-pointer min-h-[44px] flex items-center"
               >
                 {url}
               </a>

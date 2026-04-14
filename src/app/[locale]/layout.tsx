@@ -40,39 +40,39 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body className="min-h-screen flex flex-col bg-brand-surface">
+      <body className="min-h-dvh flex flex-col bg-brand-surface">
         <NextIntlClientProvider messages={messages}>
           <EmergencyBar />
 
           <header className="header-blur border-b border-slate-200/60 sticky top-8 z-40">
-            <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between gap-4">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between gap-3">
               <Link
                 href={`/${locale}`}
-                className="flex items-center gap-1 group"
+                className="flex items-center gap-1 group cursor-pointer min-h-[44px] items-center"
               >
-                <span className="font-display text-2xl text-brand-dark tracking-tight">
+                <span className="font-display text-xl sm:text-2xl text-brand-dark tracking-tight">
                   Saúde
                 </span>
-                <span className="font-display text-2xl text-brand-primary tracking-tight">
+                <span className="font-display text-xl sm:text-2xl text-brand-primary tracking-tight">
                   Foz
                 </span>
                 <span className="w-2 h-2 rounded-full bg-brand-accent ml-0.5 group-hover:scale-125 transition-transform" />
               </Link>
 
-              <nav className="flex items-center gap-2 sm:gap-4">
+              <nav className="flex items-center gap-1 sm:gap-3">
                 <Link
                   href={`/${locale}/ubs`}
-                  className="text-sm font-semibold text-slate-600 hover:text-brand-primary transition-colors px-3 py-1.5 rounded-lg hover:bg-brand-light"
+                  className="text-sm font-semibold text-slate-600 hover:text-brand-primary active:text-brand-dark transition-colors px-3 py-2.5 rounded-lg hover:bg-brand-light cursor-pointer min-h-[44px] flex items-center"
                 >
                   UBS
                 </Link>
                 <Link
                   href={`/${locale}/sobre`}
-                  className="text-sm font-semibold text-slate-600 hover:text-brand-primary transition-colors px-3 py-1.5 rounded-lg hover:bg-brand-light"
+                  className="text-sm font-semibold text-slate-600 hover:text-brand-primary active:text-brand-dark transition-colors px-3 py-2.5 rounded-lg hover:bg-brand-light cursor-pointer min-h-[44px] flex items-center"
                 >
                   Info
                 </Link>
-                <div className="w-px h-5 bg-slate-200" />
+                <div className="w-px h-5 bg-slate-200 hidden sm:block" />
                 <LanguageSwitcher currentLocale={locale as Locale} />
               </nav>
             </div>
@@ -82,14 +82,14 @@ export default async function LocaleLayout({
 
           <DisclaimerBanner />
 
-          <footer className="bg-gradient-to-b from-slate-900 to-slate-950 text-slate-400 py-10 px-4 sm:px-6">
+          <footer className="bg-gradient-to-b from-slate-900 to-slate-950 text-slate-400 py-8 sm:py-10 px-4 sm:px-6">
             <div className="max-w-6xl mx-auto">
-              <div className="flex items-center gap-1 mb-4">
-                <span className="font-display text-xl text-white">Saúde</span>
-                <span className="font-display text-xl text-teal-400">Foz</span>
+              <div className="flex items-center gap-1 mb-3 sm:mb-4">
+                <span className="font-display text-lg sm:text-xl text-white">Saúde</span>
+                <span className="font-display text-lg sm:text-xl text-teal-400">Foz</span>
                 <span className="w-1.5 h-1.5 rounded-full bg-orange-400 ml-0.5" />
               </div>
-              <p className="text-sm mb-2 max-w-md">
+              <p className="text-sm mb-2 max-w-md leading-relaxed">
                 Proyecto informativo sin fines de lucro. No sustituye atención médica.
               </p>
               <p className="text-xs text-slate-600">
