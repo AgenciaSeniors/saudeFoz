@@ -64,4 +64,4 @@ curl -H "Authorization: Bearer $CRON_SECRET" http://localhost:3000/api/cron/scra
 - [ ] Traducir `pt.json`, `en.json`, `fr.json`, `gn.json` (guaraní: contactar Letras UNILA)
 - [ ] Generar iconos PWA en `/public/icons/`
 - [ ] Revisión legal del disclaimer
-- [ ] Analytics (Umami o Plausible, respetando privacidad)
+- [x] Analytics (Umami o Plausible, respetando privacidad) — componente opt-in `src/components/Analytics.tsx`; sin tracking por defecto, se activa con env vars (ver `.env.local.example`)

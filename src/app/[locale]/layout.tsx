@@ -6,6 +6,7 @@ import { locales, type Locale } from '@/lib/i18n';
 import { EmergencyBar } from '@/components/EmergencyBar';
 import { DisclaimerBanner } from '@/components/DisclaimerBanner';
 import { LanguageSwitcher } from '@/components/LanguageSwitcher';
+import { Analytics } from '@/components/Analytics';
 import Link from 'next/link';
 import '../globals.css';
 
@@ -105,6 +106,7 @@ export default async function LocaleLayout({
               </p>
             </div>
           </footer>
+          <Analytics />
         </NextIntlClientProvider>
       </body>
     </html>
