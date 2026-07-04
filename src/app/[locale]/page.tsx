@@ -1,3 +1,5 @@
+import Link from 'next/link';
+import { Sparkles, ArrowRight } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { unstable_setRequestLocale } from 'next-intl/server';
 import { SECTIONS } from '@/lib/sections';
@@ -30,7 +32,7 @@ export default function HomePage({
 
       {/* Sections grid */}
       <section
-        className="max-w-6xl mx-auto px-4 sm:px-6 pb-12 sm:pb-16 -mt-2 sm:-mt-4 relative z-10"
+        className="max-w-6xl mx-auto px-4 sm:px-6 pb-8 sm:pb-10 -mt-2 sm:-mt-4 relative z-10"
         aria-labelledby="sections-heading"
       >
         <h2
@@ -50,6 +52,35 @@ export default function HomePage({
               index={i}
             />
           ))}
+        </div>
+      </section>
+
+      {/* Ponte Saúde project banner */}
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 pb-12 sm:pb-16">
+        <div className="relative overflow-hidden rounded-2xl bg-brand-dark text-white shadow-glow px-6 py-8 sm:px-10 sm:py-10">
+          <div
+            className="absolute -right-10 -top-10 w-48 h-48 rounded-full bg-brand-primary/30 blur-3xl"
+            aria-hidden
+          />
+          <div className="relative z-10 max-w-2xl">
+            <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-wider text-teal-100 bg-white/10 border border-white/15 rounded-full px-3 py-1 mb-3">
+              <Sparkles size={13} aria-hidden />
+              {t('project.hero.badge')}
+            </span>
+            <h2 className="font-display text-2xl sm:text-3xl tracking-tight mb-2">
+              {t('project.hero.name')}
+            </h2>
+            <p className="text-teal-50/90 leading-relaxed mb-5 max-w-xl">
+              {t('project.hero.tagline')}
+            </p>
+            <Link
+              href={`/${locale}/sobre`}
+              className="inline-flex items-center gap-2 bg-white text-brand-dark font-semibold text-sm px-5 py-3 rounded-xl hover:bg-teal-50 active:bg-teal-100 transition-colors cursor-pointer min-h-[44px]"
+            >
+              {t('home.aboutCta')}
+              <ArrowRight size={16} aria-hidden />
+            </Link>
+          </div>
         </div>
       </section>
     </>

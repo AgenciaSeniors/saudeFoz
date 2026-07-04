@@ -4,6 +4,9 @@
     "tagline": "Acesse o sistema de saúde brasileiro (SUS) em Foz do Iguaçu. Informação oficial no seu idioma.",
     "disclaimer": "Informação orientativa. Não substitui atendimento médico. Em emergência: SAMU 192."
   },
+  "home": {
+    "aboutCta": "Conheça o projeto"
+  },
   "nav": {
     "home": "Início",
     "sections": "Temas de saúde",

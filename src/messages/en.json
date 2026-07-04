@@ -4,6 +4,9 @@
     "tagline": "Access Brazil's public health system (SUS) in Foz do Iguaçu. Official information in your language.",
     "disclaimer": "For guidance only. Does not replace medical care. Emergency: call SAMU 192."
   },
+  "home": {
+    "aboutCta": "Learn about the project"
+  },
   "nav": {
     "home": "Home",
     "sections": "Health topics",
