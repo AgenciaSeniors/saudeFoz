@@ -36,6 +36,56 @@
       "gynecologist": "Ginecóloga"
     }
   },
+  "project": {
+    "hero": {
+      "badge": "El proyecto",
+      "name": "Ponte Saúde",
+      "tagline": "Conectando migrantes al SUS, promoviendo salud y dignidad.",
+      "intro": "SaúdeFoz es la herramienta digital de Ponte Saúde: información del SUS clara, multilingüe y accesible, para que ninguna persona migrante quede sin atención por no saber cómo o dónde buscarla."
+    },
+    "context": {
+      "title": "Contexto",
+      "body": "Foz do Iguaçu es una de las ciudades más diversas de Brasil, con más de 90 nacionalidades y una población migrante en crecimiento, en plena Triple Frontera.",
+      "stat1Value": "45.500",
+      "stat1Label": "atenciones a personas migrantes en la red pública de salud de Foz do Iguaçu entre 2023 y 2024.",
+      "stat2Value": "+90",
+      "stat2Label": "nacionalidades conviviendo en la región de la Triple Frontera."
+    },
+    "problem": {
+      "title": "El problema",
+      "body": "Las personas migrantes enfrentan dificultades para acceder de forma efectiva al sistema de salud, lo que deriva en atención tardía, fragmentada o inexistente.",
+      "causesTitle": "Causas principales",
+      "cause1Title": "Barreras lingüísticas e informacionales",
+      "cause1Body": "La comunicación limitada entre profesionales de salud y migrantes dificulta el diálogo, la escucha cualificada y la comprensión de las orientaciones.",
+      "cause2Title": "Obstáculos documentales y burocráticos",
+      "cause2Body": "La falta de CPF, de documentos personales o de comprobante de residencia, junto al desconocimiento de los trámites, dificulta el registro y el acceso a los servicios.",
+      "cause3Title": "Fragmentación institucional",
+      "cause3Body": "Los servicios disponibles no están bien articulados entre salud, asistencia social y sociedad civil, con procesos poco integrados y pérdida de seguimiento."
+    },
+    "solution": {
+      "title": "Nuestra solución",
+      "name": "Ponte Saúde",
+      "intro": "Tres frentes que trabajan juntos para tender un puente entre la comunidad migrante y el sistema de salud.",
+      "pillar1Title": "Navegadores de Salud",
+      "pillar1Body": "Personas migrantes bilingües capacitadas que actúan como mediadoras culturales: orientan sobre derechos y acompañan el acceso a las UBS.",
+      "pillar2Title": "Kit Multilingüe · SaúdeMundi",
+      "pillar2Body": "Herramientas físicas y digitales para superar la barrera del idioma: materiales visuales, audios en varios idiomas y un asistente de navegación sobre el uso del SUS.",
+      "pillar2Badge": "Estás usando esta herramienta ahora",
+      "pillar3Title": "Rodas de Salud Comunitarias",
+      "pillar3Body": "Espacios de atención preventiva con triaje, educación en salud y derivación oportuna a la atención primaria."
+    },
+    "impact": {
+      "title": "El impacto que buscamos",
+      "intro": "Un sistema de salud más justo, eficiente y adaptado a la diversidad cultural.",
+      "item1": "Mejor acceso a la información en salud y comunicación facilitada en varios idiomas.",
+      "item2": "Más personas migrantes atendidas en la atención primaria, no solo en urgencias.",
+      "item3": "Reducción de emergencias evitables y de la sobrecarga de los servicios de urgencia.",
+      "item4": "Mayor cobertura de vacunación y adhesión a programas preventivos.",
+      "item5": "Datos epidemiológicos más precisos y mayor equidad e inclusión en salud."
+    },
+    "footerTitle": "Un proyecto con propósito",
+    "footerNote": "Ponte Saúde no tiene afiliación oficial con el gobierno brasileño ni con instituciones de salud. Nace del trabajo conjunto con UBS, organizaciones sociales y voluntariado para fortalecer el acceso y la continuidad del cuidado."
+  },
   "about": {
     "title": "Sobre SaúdeFoz",
     "paragraph1": "SaúdeFoz es un proyecto sin fines de lucro que facilita el acceso al Sistema Único de Salud (SUS) para inmigrantes en Foz do Iguaçu y la Triple Frontera.",
