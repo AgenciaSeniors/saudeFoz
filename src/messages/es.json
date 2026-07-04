@@ -86,6 +86,27 @@
       "item4": "Mayor cobertura de vacunación y adhesión a programas preventivos.",
       "item5": "Datos epidemiológicos más precisos y mayor equidad e inclusión en salud."
     },
+    "goals": {
+      "title": "Nuestras metas",
+      "intro": "Objetivos de alcance para los próximos años.",
+      "stat1Value": "5.000",
+      "stat1Label": "personas beneficiadas directamente en el primer año",
+      "stat2Value": "20.000",
+      "stat2Label": "usuarios activos en SaúdeFoz",
+      "stat3Value": "100k+",
+      "stat3Label": "personas beneficiadas indirectamente en tres años"
+    },
+    "sdg": {
+      "title": "Alineado con los Objetivos de Desarrollo Sostenible",
+      "item3": "ODS 3 · Salud y bienestar",
+      "item10": "ODS 10 · Reducción de las desigualdades",
+      "item17": "ODS 17 · Alianzas para lograr los objetivos"
+    },
+    "partners": {
+      "title": "Una red que impulsa el cambio",
+      "body": "El proyecto se construye junto a organizaciones internacionales (ACNUR, OIM), universidades como la UNILA, el SUS y la Secretaría Municipal de Salud, además de ONGs y empresas responsables comprometidas con la inclusión.",
+      "tags": "ACNUR, OIM, UNILA, SUS, ONGs"
+    },
     "footerTitle": "Un proyecto con propósito",
     "footerNote": "Ponte Saúde no tiene afiliación oficial con el gobierno brasileño ni con instituciones de salud. Nace del trabajo conjunto con UBS, organizaciones sociales y voluntariado para fortalecer el acceso y la continuidad del cuidado."
   },

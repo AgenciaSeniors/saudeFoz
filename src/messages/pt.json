@@ -86,6 +86,27 @@
       "item4": "Maior cobertura de vacinação e adesão a programas preventivos.",
       "item5": "Dados epidemiológicos mais precisos e maior equidade e inclusão em saúde."
     },
+    "goals": {
+      "title": "Nossas metas",
+      "intro": "Objetivos de alcance para os próximos anos.",
+      "stat1Value": "5.000",
+      "stat1Label": "pessoas beneficiadas diretamente no primeiro ano",
+      "stat2Value": "20.000",
+      "stat2Label": "usuários ativos no SaúdeFoz",
+      "stat3Value": "100k+",
+      "stat3Label": "pessoas beneficiadas indiretamente em três anos"
+    },
+    "sdg": {
+      "title": "Alinhado com os Objetivos de Desenvolvimento Sustentável",
+      "item3": "ODS 3 · Saúde e bem-estar",
+      "item10": "ODS 10 · Redução das desigualdades",
+      "item17": "ODS 17 · Parcerias para a implementação"
+    },
+    "partners": {
+      "title": "Uma rede que impulsiona a mudança",
+      "body": "O projeto é construído junto a organizações internacionais (ACNUR, OIM), universidades como a UNILA, o SUS e a Secretaria Municipal de Saúde, além de ONGs e empresas responsáveis comprometidas com a inclusão.",
+      "tags": "ACNUR, OIM, UNILA, SUS, ONGs"
+    },
     "footerTitle": "Um projeto com propósito",
     "footerNote": "O Ponte Saúde não tem afiliação oficial com o governo brasileiro nem com instituições de saúde. Nasce do trabalho conjunto com UBS, organizações sociais e voluntariado para fortalecer o acesso e a continuidade do cuidado."
   },

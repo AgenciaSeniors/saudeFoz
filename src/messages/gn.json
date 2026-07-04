@@ -86,6 +86,27 @@
       "item4": "Hetave vakunasiõ ha jeike umi tembiapo oñangarekóva rehe.",
       "item5": "Marandu epidemiológico añetegua ha tesãi hekojojáva opavavépe g̃uarã."
     },
+    "goals": {
+      "title": "Ñande jehupytyrã",
+      "intro": "Mba'e jahupytyséva ko'ẽrõ ára rehe.",
+      "stat1Value": "5.000",
+      "stat1Label": "tapicha oñepytyvõva'ekue ary peteĩháme",
+      "stat2Value": "20.000",
+      "stat2Label": "puruhára oikóva SaúdeFoz-pe",
+      "stat3Value": "100k+",
+      "stat3Label": "tapicha oñepytyvõva'ekue mbohapy áry aja"
+    },
+    "sdg": {
+      "title": "Ojoaju ODS (Objetivos de Desarrollo Sostenible) ndive",
+      "item3": "ODS 3 · Tesãi ha teko porã",
+      "item10": "ODS 10 · Ñembojoja'ỹ ñemomichĩ",
+      "item17": "ODS 17 · Joaju hetaichagua"
+    },
+    "partners": {
+      "title": "Peteĩ joaju omomýiva ñemoambue",
+      "body": "Ko tembiapo oñemopu'ã oñondive atyguasu tetãmbyguáva ndive (ACNUR, OIM), mbo'ehaovusu UNILA-icha, SUS ha Secretaria Municipal de Saúde, ha avei ONG ha empresa oñeñangarekóva oñemoinclúi rehe.",
+      "tags": "ACNUR, OIM, UNILA, SUS, ONGs"
+    },
     "footerTitle": "Peteĩ tembiapo hekopeguáva",
     "footerNote": "Ponte Saúde ndoguerekói mba'eve Brasil retã ndive ha ani avei tesãi rendá ndive. Osẽ tembiapo oñondivegua UBS, tekoha aty ha pytyvõhára reheve, omombarete hag̃ua jeike ha ñangareko continuidad."
   },

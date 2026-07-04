@@ -283,6 +283,91 @@ export default function SobrePage({
           </ul>
         </section>
 
+        {/* Goals */}
+        <section aria-labelledby="goals-heading">
+          <h2
+            id="goals-heading"
+            className="font-display text-2xl sm:text-3xl text-slate-900 tracking-tight mb-2"
+          >
+            {t('project.goals.title')}
+          </h2>
+          <p className="text-brand-muted text-base sm:text-lg leading-relaxed mb-6 max-w-2xl">
+            {t('project.goals.intro')}
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
+            {(['stat1', 'stat2', 'stat3'] as const).map((s) => (
+              <div
+                key={s}
+                className="bg-white rounded-2xl border border-slate-200/80 shadow-card p-5 sm:p-6"
+              >
+                <div className="font-display text-3xl sm:text-4xl text-brand-primary leading-none mb-1.5">
+                  {t(`project.goals.${s}Value`)}
+                </div>
+                <p className="text-sm text-brand-muted leading-snug">
+                  {t(`project.goals.${s}Label`)}
+                </p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* SDG alignment */}
+        <section aria-labelledby="sdg-heading">
+          <h2
+            id="sdg-heading"
+            className="font-display text-2xl sm:text-3xl text-slate-900 tracking-tight mb-4"
+          >
+            {t('project.sdg.title')}
+          </h2>
+          <div className="flex flex-col sm:flex-row gap-3">
+            {(['item3', 'item10', 'item17'] as const).map((k) => (
+              <div
+                key={k}
+                className="flex-1 flex items-center gap-2.5 bg-brand-light border border-brand-primary/15 rounded-xl px-4 py-3"
+              >
+                <CheckCircle2
+                  size={16}
+                  className="shrink-0 text-brand-primary"
+                  aria-hidden
+                />
+                <span className="text-sm font-medium text-slate-700">
+                  {t(`project.sdg.${k}`)}
+                </span>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        {/* Partners */}
+        <section aria-labelledby="partners-heading">
+          <h2
+            id="partners-heading"
+            className="font-display text-2xl sm:text-3xl text-slate-900 tracking-tight mb-2"
+          >
+            {t('project.partners.title')}
+          </h2>
+          <p className="text-brand-muted text-base sm:text-lg leading-relaxed mb-4 max-w-2xl">
+            {t('project.partners.body')}
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {t('project.partners.tags')
+              .split(',')
+              .map((tag) => (
+                <span
+                  key={tag}
+                  className="inline-flex items-center gap-1.5 text-sm font-medium bg-white border border-slate-200 text-slate-700 rounded-full px-3.5 py-1.5 shadow-card"
+                >
+                  <HeartHandshake
+                    size={14}
+                    className="text-brand-primary"
+                    aria-hidden
+                  />
+                  {tag.trim()}
+                </span>
+              ))}
+          </div>
+        </section>
+
         {/* Project note + CTA */}
         <section className="bg-brand-light border border-brand-primary/15 rounded-2xl p-6 sm:p-8">
           <h2 className="font-display text-xl sm:text-2xl text-slate-900 tracking-tight mb-2">

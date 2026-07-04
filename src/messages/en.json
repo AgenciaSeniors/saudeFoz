@@ -86,6 +86,27 @@
       "item4": "Higher vaccination coverage and uptake of preventive programs.",
       "item5": "More accurate epidemiological data and greater equity and inclusion in health."
     },
+    "goals": {
+      "title": "Our goals",
+      "intro": "Reach targets for the coming years.",
+      "stat1Value": "5,000",
+      "stat1Label": "people directly helped in the first year",
+      "stat2Value": "20,000",
+      "stat2Label": "active users on SaúdeFoz",
+      "stat3Value": "100k+",
+      "stat3Label": "people indirectly helped within three years"
+    },
+    "sdg": {
+      "title": "Aligned with the Sustainable Development Goals",
+      "item3": "SDG 3 · Good health and well-being",
+      "item10": "SDG 10 · Reduced inequalities",
+      "item17": "SDG 17 · Partnerships for the goals"
+    },
+    "partners": {
+      "title": "A network driving change",
+      "body": "The project is built together with international organizations (UNHCR, IOM), universities such as UNILA, the SUS and the Municipal Health Department, plus NGOs and responsible companies committed to inclusion.",
+      "tags": "UNHCR, IOM, UNILA, SUS, NGOs"
+    },
     "footerTitle": "A project with purpose",
     "footerNote": "Ponte Saúde has no official affiliation with the Brazilian government or health institutions. It grows from joint work with UBS health centers, social organizations and volunteers to strengthen access and continuity of care."
   },
