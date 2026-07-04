@@ -1,6 +1,6 @@
 import Link from 'next/link';
-import * as Icons from 'lucide-react';
 import type { Section } from '@/lib/sections';
+import { SectionIcon } from '@/components/SectionIcon';
 import { cn } from '@/lib/utils';
 
 export function SectionCard({
@@ -16,9 +16,6 @@ export function SectionCard({
   description: string;
   index?: number;
 }) {
-  const Icon = (Icons[section.icon as keyof typeof Icons] ??
-    Icons.Circle) as React.ComponentType<{ size?: number; 'aria-hidden'?: boolean }>;
-
   return (
     <Link
       href={`/${locale}/secao/${section.slug}`}
@@ -44,7 +41,7 @@ export function SectionCard({
             section.textColor
           )}
         >
-          <Icon size={22} aria-hidden />
+          <SectionIcon name={section.icon} size={22} />
         </div>
         <div className="flex-1 min-w-0">
           <h3 className="font-semibold text-slate-900 text-[15px] sm:text-base leading-tight mb-0.5 sm:mb-1 group-hover:text-brand-primary transition-colors">

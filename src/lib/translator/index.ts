@@ -4,7 +4,9 @@
  * Rate limiting strategy:
  * - All calls are serialized through a module-level queue (no parallelism)
  * - 5-second gap between consecutive calls (12 req/min, under 15 RPM limit)
- * - Single retry on 429 with 60-second backoff
+ * - Single retry with 60-second backoff ONLY on 429 (rate limit). Any other
+ *   failure (4xx/5xx, empty response, parse error) fails fast without backoff,
+ *   so a systemic error can't burn the whole cron time budget.
  *
  * This means the scraper can call translateContent() freely in parallel —
  * the throttling happens here, not in the caller.
@@ -35,6 +37,11 @@ export type TranslationResult = {
 };
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
+
+// Sentinel returned by callGemini() to distinguish a retryable 429 from a
+// permanent failure (which returns null).
+const RATE_LIMITED = Symbol('rate_limited');
+type GeminiOutcome = TranslationResult | null | typeof RATE_LIMITED;
 
 // Serialization queue — every call waits for the previous to finish
 let queue: Promise<unknown> = Promise.resolve();
@@ -78,25 +85,29 @@ async function callGeminiWithRetry(
   summary: string
 ): Promise<TranslationResult> {
   const result = await callGemini(title, summary);
-  if (result !== null) return result;
 
-  // First attempt failed — wait and retry once
-  console.warn(
-    `[translator] First attempt failed, waiting ${BACKOFF_MS / 1000}s before retry...`
-  );
-  await sleep(BACKOFF_MS);
+  // Only a 429 is worth waiting out — retry once after the backoff.
+  if (result === RATE_LIMITED) {
+    console.warn(
+      `[translator] Rate limited (429), waiting ${BACKOFF_MS / 1000}s before retrying once...`
+    );
+    await sleep(BACKOFF_MS);
+    const retryResult = await callGemini(title, summary);
+    return retryResult && retryResult !== RATE_LIMITED ? retryResult : {};
+  }
 
-  const retryResult = await callGemini(title, summary);
-  return retryResult ?? {};
+  // Any other failure (null) fails fast — no dead 60s backoff.
+  return result ?? {};
 }
 
 /**
- * Single Gemini API call. Returns null on failure, parsed result on success.
+ * Single Gemini API call. Returns RATE_LIMITED on a 429, null on any other
+ * failure, and the parsed result on success.
  */
 async function callGemini(
   title: string,
   summary: string
-): Promise<TranslationResult | null> {
+): Promise<GeminiOutcome> {
   const prompt = `You are a professional medical translator working on a public health website for immigrants in Foz do Iguaçu, Brazil (Triple Frontier region).
 
 Translate the following Brazilian Portuguese health information from the Brazilian Ministry of Health (SUS) into three languages: Spanish (es), English (en), and French (fr).
@@ -138,7 +149,7 @@ SUMMARY: ${summary}`;
 
     if (res.status === 429) {
       console.warn('[translator] Hit rate limit (429)');
-      return null;
+      return RATE_LIMITED;
     }
 
     if (!res.ok) {

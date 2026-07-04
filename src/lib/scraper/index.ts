@@ -1,6 +1,7 @@
 import * as cheerio from 'cheerio';
 import pLimit from 'p-limit';
-import { supabaseAdmin } from '@/lib/supabase/server';
+import type { SupabaseClient } from '@supabase/supabase-js';
+import { getSupabaseAdmin } from '@/lib/supabase/server';
 import { SECTIONS } from '@/lib/sections';
 import { translateContent } from '@/lib/translator';
 
@@ -62,7 +63,11 @@ function extractTitle($: cheerio.CheerioAPI): string {
   return $('title').text().trim();
 }
 
-async function scrapeOne(url: string, sectionSlug: string) {
+async function scrapeOne(
+  url: string,
+  sectionSlug: string,
+  supabaseAdmin: SupabaseClient
+) {
   try {
     const res = await fetch(url, {
       headers: {
@@ -153,8 +158,17 @@ async function scrapeOne(url: string, sectionSlug: string) {
 }
 
 export async function runScraper() {
+  const supabaseAdmin = getSupabaseAdmin();
+  if (!supabaseAdmin) {
+    throw new Error(
+      'Supabase is not configured: set NEXT_PUBLIC_SUPABASE_URL and SUPABASE_SERVICE_ROLE_KEY.'
+    );
+  }
+
   const jobs = SECTIONS.flatMap((section) =>
-    section.officialUrls.map((url) => limit(() => scrapeOne(url, section.slug)))
+    section.officialUrls.map((url) =>
+      limit(() => scrapeOne(url, section.slug, supabaseAdmin))
+    )
   );
   return Promise.all(jobs);
 }
