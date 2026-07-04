@@ -6,6 +6,7 @@ import { locales, type Locale } from '@/lib/i18n';
 import { EmergencyBar } from '@/components/EmergencyBar';
 import { DisclaimerBanner } from '@/components/DisclaimerBanner';
 import { LanguageSwitcher } from '@/components/LanguageSwitcher';
+import { Analytics } from '@/components/Analytics';
 import Link from 'next/link';
 import '../globals.css';
 
@@ -15,6 +16,13 @@ export const metadata: Metadata = {
     'Información práctica del SUS para inmigrantes en Foz do Iguaçu. 15 temas de salud en 5 idiomas.',
   manifest: '/manifest.json',
   appleWebApp: { capable: true, statusBarStyle: 'default', title: 'SaúdeFoz' },
+  icons: {
+    icon: [
+      { url: '/icons/favicon.png', sizes: '48x48', type: 'image/png' },
+      { url: '/icons/icon-192.png', sizes: '192x192', type: 'image/png' },
+    ],
+    apple: '/icons/apple-touch-icon.png',
+  },
 };
 
 export const viewport: Viewport = {
@@ -98,6 +106,7 @@ export default async function LocaleLayout({
               </p>
             </div>
           </footer>
+          <Analytics />
         </NextIntlClientProvider>
       </body>
     </html>

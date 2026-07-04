@@ -4,6 +4,9 @@
     "tagline": "Eike Brasil tesãi rendápe (SUS) Foz do Iguaçu-pe. Marandu oficial ne ñe'ẽme.",
     "disclaimer": "Marandu ñemoherakuã mante. Noñembyesái médico ñangareko. Ñembyai aja: SAMU 192."
   },
+  "home": {
+    "aboutCta": "Eikuaa ko tembiapo"
+  },
   "nav": {
     "home": "Ñepyrũha",
     "sections": "Tesãi rehegua",
@@ -35,6 +38,77 @@
       "pediatrician": "Mitã médico",
       "gynecologist": "Kuña médico"
     }
+  },
+  "project": {
+    "hero": {
+      "badge": "Tembiapo",
+      "name": "Ponte Saúde",
+      "tagline": "Ojoaju umi tetã ambuégui oúva SUS ndive, omomýi tesãi ha teko marangatu.",
+      "intro": "SaúdeFoz ha'e Ponte Saúde rembipuru digital: SUS marandu hesakãva, heta ñe'ẽme ha ojehupytýva, ani hag̃ua avave tetã ambuégui oúva opyta ñangareko'ỹre ndoikuaáigui mba'éichapa térã moõpa oheka."
+    },
+    "context": {
+      "title": "Tekoha",
+      "body": "Foz do Iguaçu ha'e peteĩ táva iñambuevéva Brasil-pe, oĩháme hetave 90 tetã ha heta tetã ambuégui oúva okakuaáva, Mbohapy Frontera mbytépe.",
+      "stat1Value": "45.500",
+      "stat1Label": "ñangareko oñeme'ẽva'ekue tetã ambuégui oúvape Foz do Iguaçu tesãi rendápe 2023 ha 2024 pa'ũme.",
+      "stat2Value": "+90",
+      "stat2Label": "tetã oikóva oñondive Mbohapy Frontera pegua."
+    },
+    "problem": {
+      "title": "Apañuãi",
+      "body": "Umi tetã ambuégui oúva ohasa asy oike hag̃ua añetehápe tesãi rendápe; upévare ñangareko oguahẽ hague rire, oñemopa'ũ térã ndaipóri jepe.",
+      "causesTitle": "Apañuãi rapo",
+      "cause1Title": "Ñe'ẽ ha marandu apañuãi",
+      "cause1Body": "Ñe'ẽ joaju'ỹ tesãi mba'apohára ha tetã ambuégui oúva apytépe ombotapykue ñomongeta, jehendu porã ha umi mbo'e ñemyesakã.",
+      "cause2Title": "Kuatia ha burocracia apañuãi",
+      "cause2Body": "CPF, kuatia tee térã kuatia'ỹ, ha avei ndoikuaáigui mba'éichapa ojejapo, ombotapykue ñemboherana ha tembiapokuéra jeike.",
+      "cause3Title": "Tembiapo oñondive'ỹ",
+      "cause3Body": "Umi tembiapo oĩva noñombojoajúi porãi tesãi, pytyvõ social ha tekoha aty ndive, ha upévare oñemopa'ũ ñangareko."
+    },
+    "solution": {
+      "title": "Ñande ñemoĩporã",
+      "name": "Ponte Saúde",
+      "intro": "Mbohapy tembiapo omba'apóva oñondive ojapo hag̃ua peteĩ ponte tetã ambuégui oúva ha tesãi rendá mbytépe.",
+      "pillar1Title": "Tesãi Sãmbyhyhára",
+      "pillar1Body": "Tetã ambuégui oúva oñe'ẽ mokõi ñe'ẽ ha oñembo'ekuaáva, omba'apóva mediador cultural-ramo: omombe'u derecho ha omoirũ jeike UBS-pe.",
+      "pillar2Title": "Kit Heta Ñe'ẽ · SaúdeMundi",
+      "pillar2Body": "Tembipuru físico ha digital ipu'akápa hag̃ua ñe'ẽ apañuãire: mba'e ojehecháva, ñe'ẽpu heta ñe'ẽme ha peteĩ pytyvõhára digital SUS jepuru rehegua.",
+      "pillar2Badge": "Reipuruhína ko tembipuru ko'ág̃a",
+      "pillar3Title": "Tesãi Aty Tekoha-pegua",
+      "pillar3Body": "Henda oñeñangareko ñemboyke hag̃ua mba'asy, oñembo'e tesãi ha oñemondo hendaitépe atención primaria-pe."
+    },
+    "impact": {
+      "title": "Mba'e porã oikóta",
+      "intro": "Peteĩ tesãi rendá hekojojáva, ikatupyryvéva ha ojoajúva opaichagua tekoha ndive.",
+      "item1": "Jeike porãve tesãi marandúpe ha ñomongeta hasyve'ỹva heta ñe'ẽme.",
+      "item2": "Hetave tetã ambuégui oúva oñeñangareko atención primaria-pe, ndaha'éi ñembyai aja añónte.",
+      "item3": "Sa'ive ñembyai ikatúva ojejoko, ha michĩve mba'apo pohýi umi urgencia rendápe.",
+      "item4": "Hetave vakunasiõ ha jeike umi tembiapo oñangarekóva rehe.",
+      "item5": "Marandu epidemiológico añetegua ha tesãi hekojojáva opavavépe g̃uarã."
+    },
+    "goals": {
+      "title": "Ñande jehupytyrã",
+      "intro": "Mba'e jahupytyséva ko'ẽrõ ára rehe.",
+      "stat1Value": "5.000",
+      "stat1Label": "tapicha oñepytyvõva'ekue ary peteĩháme",
+      "stat2Value": "20.000",
+      "stat2Label": "puruhára oikóva SaúdeFoz-pe",
+      "stat3Value": "100k+",
+      "stat3Label": "tapicha oñepytyvõva'ekue mbohapy áry aja"
+    },
+    "sdg": {
+      "title": "Ojoaju ODS (Objetivos de Desarrollo Sostenible) ndive",
+      "item3": "ODS 3 · Tesãi ha teko porã",
+      "item10": "ODS 10 · Ñembojoja'ỹ ñemomichĩ",
+      "item17": "ODS 17 · Joaju hetaichagua"
+    },
+    "partners": {
+      "title": "Peteĩ joaju omomýiva ñemoambue",
+      "body": "Ko tembiapo oñemopu'ã oñondive atyguasu tetãmbyguáva ndive (ACNUR, OIM), mbo'ehaovusu UNILA-icha, SUS ha Secretaria Municipal de Saúde, ha avei ONG ha empresa oñeñangarekóva oñemoinclúi rehe.",
+      "tags": "ACNUR, OIM, UNILA, SUS, ONGs"
+    },
+    "footerTitle": "Peteĩ tembiapo hekopeguáva",
+    "footerNote": "Ponte Saúde ndoguerekói mba'eve Brasil retã ndive ha ani avei tesãi rendá ndive. Osẽ tembiapo oñondivegua UBS, tekoha aty ha pytyvõhára reheve, omombarete hag̃ua jeike ha ñangareko continuidad."
   },
   "about": {
     "title": "SaúdeFoz rehegua",

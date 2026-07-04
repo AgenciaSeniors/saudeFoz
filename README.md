@@ -17,7 +17,8 @@ cp .env.local.example .env.local
 # edita .env.local con tus credenciales de Supabase
 
 # 3. Crear tablas en Supabase
-# Pega el contenido de supabase/migrations/0001_init.sql en el SQL Editor de Supabase
+# Pega el contenido de supabase/migrations/0001_init.sql en el SQL Editor de Supabase,
+# y luego 0002_seed_ubs_foz.sql para cargar las UBS reales de Foz (⚠️ verificar datos)
 
 # 4. Correr en desarrollo
 pnpm dev
@@ -59,8 +60,8 @@ curl -H "Authorization: Bearer $CRON_SECRET" http://localhost:3000/api/cron/scra
 
 ## TODO antes del launch
 
-- [ ] Cargar las ~25 UBS reales de Foz en Supabase
+- [x] Cargar las ~25 UBS reales de Foz en Supabase — seed en `supabase/migrations/0002_seed_ubs_foz.sql` (26 UBS; ⚠️ **verificar direcciones/teléfonos con la Secretaria Municipal de Saúde antes del launch**, y activar flags has_dentist/pediatra/ginecología por unidad)
 - [ ] Traducir `pt.json`, `en.json`, `fr.json`, `gn.json` (guaraní: contactar Letras UNILA)
 - [ ] Generar iconos PWA en `/public/icons/`
 - [ ] Revisión legal del disclaimer
-- [ ] Analytics (Umami o Plausible, respetando privacidad)
+- [x] Analytics (Umami o Plausible, respetando privacidad) — componente opt-in `src/components/Analytics.tsx`; sin tracking por defecto, se activa con env vars (ver `.env.local.example`)

@@ -8,6 +8,7 @@ out
 *.log
 .vercel
 next-env.d.ts
+tsconfig.tsbuildinfo
 public/sw.js
 public/workbox-*.js
 public/worker-*.js

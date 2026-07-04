@@ -4,6 +4,9 @@
     "tagline": "Access Brazil's public health system (SUS) in Foz do Iguaçu. Official information in your language.",
     "disclaimer": "For guidance only. Does not replace medical care. Emergency: call SAMU 192."
   },
+  "home": {
+    "aboutCta": "Learn about the project"
+  },
   "nav": {
     "home": "Home",
     "sections": "Health topics",
@@ -35,6 +38,77 @@
       "pediatrician": "Pediatrician",
       "gynecologist": "Gynecologist"
     }
+  },
+  "project": {
+    "hero": {
+      "badge": "The project",
+      "name": "Ponte Saúde",
+      "tagline": "Connecting migrants to the SUS, promoting health and dignity.",
+      "intro": "SaúdeFoz is the digital tool of Ponte Saúde: clear, multilingual and accessible SUS information, so that no migrant goes without care simply for not knowing how or where to find it."
+    },
+    "context": {
+      "title": "Context",
+      "body": "Foz do Iguaçu is one of Brazil's most diverse cities, with more than 90 nationalities and a growing migrant population, right on the Triple Frontier.",
+      "stat1Value": "45,500",
+      "stat1Label": "care visits by migrants in Foz do Iguaçu's public health network between 2023 and 2024.",
+      "stat2Value": "+90",
+      "stat2Label": "nationalities living side by side in the Triple Frontier region."
+    },
+    "problem": {
+      "title": "The problem",
+      "body": "Migrants face real barriers to effectively accessing the health system, resulting in care that is late, fragmented or absent.",
+      "causesTitle": "Main causes",
+      "cause1Title": "Language and information barriers",
+      "cause1Body": "Limited communication between health professionals and migrants hinders dialogue, attentive listening and understanding of guidance.",
+      "cause2Title": "Documentation and bureaucratic obstacles",
+      "cause2Body": "The lack of a CPF, personal documents or proof of residence, together with unfamiliarity with the procedures, makes registration and access to services difficult.",
+      "cause3Title": "Institutional fragmentation",
+      "cause3Body": "Available services are poorly connected across health, social assistance and civil society, with fragmented processes and lost follow-up."
+    },
+    "solution": {
+      "title": "Our solution",
+      "name": "Ponte Saúde",
+      "intro": "Three fronts working together to build a bridge between the migrant community and the health system.",
+      "pillar1Title": "Health Navigators",
+      "pillar1Body": "Trained bilingual migrants who act as cultural mediators: they explain rights and support people in accessing the UBS health centers.",
+      "pillar2Title": "Multilingual Kit · SaúdeMundi",
+      "pillar2Body": "Physical and digital tools to overcome the language barrier: visual materials, audio in several languages and a navigation assistant for using the SUS.",
+      "pillar2Badge": "You're using this tool right now",
+      "pillar3Title": "Community Health Circles",
+      "pillar3Body": "Preventive care spaces with screening, health education and timely referral to primary care."
+    },
+    "impact": {
+      "title": "The impact we're after",
+      "intro": "A health system that is fairer, more efficient and adapted to cultural diversity.",
+      "item1": "Better access to health information and easier communication across languages.",
+      "item2": "More migrants seen in primary care, not only in emergencies.",
+      "item3": "Fewer avoidable emergencies and less strain on urgent-care services.",
+      "item4": "Higher vaccination coverage and uptake of preventive programs.",
+      "item5": "More accurate epidemiological data and greater equity and inclusion in health."
+    },
+    "goals": {
+      "title": "Our goals",
+      "intro": "Reach targets for the coming years.",
+      "stat1Value": "5,000",
+      "stat1Label": "people directly helped in the first year",
+      "stat2Value": "20,000",
+      "stat2Label": "active users on SaúdeFoz",
+      "stat3Value": "100k+",
+      "stat3Label": "people indirectly helped within three years"
+    },
+    "sdg": {
+      "title": "Aligned with the Sustainable Development Goals",
+      "item3": "SDG 3 · Good health and well-being",
+      "item10": "SDG 10 · Reduced inequalities",
+      "item17": "SDG 17 · Partnerships for the goals"
+    },
+    "partners": {
+      "title": "A network driving change",
+      "body": "The project is built together with international organizations (UNHCR, IOM), universities such as UNILA, the SUS and the Municipal Health Department, plus NGOs and responsible companies committed to inclusion.",
+      "tags": "UNHCR, IOM, UNILA, SUS, NGOs"
+    },
+    "footerTitle": "A project with purpose",
+    "footerNote": "Ponte Saúde has no official affiliation with the Brazilian government or health institutions. It grows from joint work with UBS health centers, social organizations and volunteers to strengthen access and continuity of care."
   },
   "about": {
     "title": "About SaúdeFoz",

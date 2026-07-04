@@ -1,11 +1,11 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { ArrowLeft, ExternalLink, Sparkles, ChevronRight } from 'lucide-react';
-import * as Icons from 'lucide-react';
+import { ExternalLink, Sparkles, ChevronRight } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { unstable_setRequestLocale } from 'next-intl/server';
 import { SECTIONS, getSectionBySlug } from '@/lib/sections';
-import { supabaseAdmin } from '@/lib/supabase/server';
+import { getSupabaseAnon } from '@/lib/supabase/server';
+import { SectionIcon } from '@/components/SectionIcon';
 import { TranslateButton } from '@/components/TranslateButton';
 import { cn } from '@/lib/utils';
 
@@ -31,22 +31,30 @@ type ContentRow = {
 };
 
 async function getContent(slug: string): Promise<ContentRow[]> {
-  const { data } = await supabaseAdmin
-    .from('scraped_content')
-    .select(
+  const supabase = getSupabaseAnon();
+  if (!supabase) return [];
+
+  try {
+    const { data } = await supabase
+      .from('scraped_content')
+      .select(
+        `
+        id,
+        title,
+        summary,
+        source_url,
+        last_scraped_at,
+        scraped_content_translations ( locale, title, summary )
       `
-      id,
-      title,
-      summary,
-      source_url,
-      last_scraped_at,
-      scraped_content_translations ( locale, title, summary )
-    `
-    )
-    .eq('section_slug', slug)
-    .eq('locale', 'pt')
-    .order('last_scraped_at', { ascending: false });
-  return (data as ContentRow[] | null) ?? [];
+      )
+      .eq('section_slug', slug)
+      .eq('locale', 'pt')
+      .order('last_scraped_at', { ascending: false });
+    return (data as ContentRow[] | null) ?? [];
+  } catch (err) {
+    console.error(`[secao] Failed to load content for "${slug}":`, err);
+    return [];
+  }
 }
 
 function resolveContent(row: ContentRow, locale: string) {
@@ -97,9 +105,6 @@ function SectionPageClient({
   const t = useTranslations();
   if (!section) return null;
 
-  const Icon = (Icons[section.icon as keyof typeof Icons] ??
-    Icons.Circle) as React.ComponentType<{ size?: number; 'aria-hidden'?: boolean }>;
-
   const hasUntranslated =
     locale !== 'pt' &&
     contents.some((c) => !resolveContent(c, locale).translated);
@@ -130,7 +135,7 @@ function SectionPageClient({
               section.textColor
             )}
           >
-            <Icon size={24} aria-hidden />
+            <SectionIcon name={section.icon} size={24} />
           </div>
           <h1 className="font-display text-2xl sm:text-3xl lg:text-4xl text-slate-900 tracking-tight leading-tight">
             {t(`sections.${section.slug}.title`)}

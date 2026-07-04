@@ -4,6 +4,9 @@
     "tagline": "Acesse o sistema de saúde brasileiro (SUS) em Foz do Iguaçu. Informação oficial no seu idioma.",
     "disclaimer": "Informação orientativa. Não substitui atendimento médico. Em emergência: SAMU 192."
   },
+  "home": {
+    "aboutCta": "Conheça o projeto"
+  },
   "nav": {
     "home": "Início",
     "sections": "Temas de saúde",
@@ -35,6 +38,77 @@
       "pediatrician": "Pediatra",
       "gynecologist": "Ginecologista"
     }
+  },
+  "project": {
+    "hero": {
+      "badge": "O projeto",
+      "name": "Ponte Saúde",
+      "tagline": "Conectando migrantes ao SUS, promovendo saúde e dignidade.",
+      "intro": "O SaúdeFoz é a ferramenta digital do Ponte Saúde: informação do SUS clara, multilíngue e acessível, para que nenhuma pessoa migrante fique sem atendimento por não saber como ou onde buscá-lo."
+    },
+    "context": {
+      "title": "Contexto",
+      "body": "Foz do Iguaçu é uma das cidades mais diversas do Brasil, com mais de 90 nacionalidades e uma população migrante crescente, em plena Tríplice Fronteira.",
+      "stat1Value": "45.500",
+      "stat1Label": "atendimentos a pessoas migrantes na rede pública de saúde de Foz do Iguaçu entre 2023 e 2024.",
+      "stat2Value": "+90",
+      "stat2Label": "nacionalidades convivendo na região da Tríplice Fronteira."
+    },
+    "problem": {
+      "title": "O problema",
+      "body": "As pessoas migrantes enfrentam dificuldades para acessar de forma efetiva o sistema de saúde, resultando em atendimento tardio, fragmentado ou inexistente.",
+      "causesTitle": "Causas principais",
+      "cause1Title": "Barreiras linguísticas e informacionais",
+      "cause1Body": "A comunicação limitada entre profissionais de saúde e migrantes dificulta o diálogo, a escuta qualificada e a compreensão das orientações.",
+      "cause2Title": "Obstáculos documentais e burocráticos",
+      "cause2Body": "A falta de CPF, de documentos pessoais ou de comprovante de residência, somada ao desconhecimento dos processos, dificulta o cadastro e o acesso aos serviços.",
+      "cause3Title": "Fragmentação institucional",
+      "cause3Body": "Os serviços disponíveis não estão bem articulados entre saúde, assistência social e sociedade civil, com processos pouco integrados e perda de acompanhamento."
+    },
+    "solution": {
+      "title": "Nossa solução",
+      "name": "Ponte Saúde",
+      "intro": "Três frentes que trabalham juntas para construir uma ponte entre a comunidade migrante e o sistema de saúde.",
+      "pillar1Title": "Navegadores de Saúde",
+      "pillar1Body": "Pessoas migrantes bilíngues capacitadas que atuam como mediadoras culturais: orientam sobre direitos e acompanham o acesso às UBS.",
+      "pillar2Title": "Kit Multilíngue · SaúdeMundi",
+      "pillar2Body": "Ferramentas físicas e digitais para superar a barreira do idioma: materiais visuais, áudios em vários idiomas e um assistente de navegação sobre o uso do SUS.",
+      "pillar2Badge": "Você está usando esta ferramenta agora",
+      "pillar3Title": "Rodas de Saúde Comunitárias",
+      "pillar3Body": "Espaços de atenção preventiva com triagem, educação em saúde e encaminhamento oportuno para a atenção primária."
+    },
+    "impact": {
+      "title": "O impacto que buscamos",
+      "intro": "Um sistema de saúde mais justo, eficiente e adaptado à diversidade cultural.",
+      "item1": "Melhor acesso à informação em saúde e comunicação facilitada em vários idiomas.",
+      "item2": "Mais pessoas migrantes atendidas na atenção primária, não apenas em urgências.",
+      "item3": "Redução de emergências evitáveis e da sobrecarga dos serviços de urgência.",
+      "item4": "Maior cobertura de vacinação e adesão a programas preventivos.",
+      "item5": "Dados epidemiológicos mais precisos e maior equidade e inclusão em saúde."
+    },
+    "goals": {
+      "title": "Nossas metas",
+      "intro": "Objetivos de alcance para os próximos anos.",
+      "stat1Value": "5.000",
+      "stat1Label": "pessoas beneficiadas diretamente no primeiro ano",
+      "stat2Value": "20.000",
+      "stat2Label": "usuários ativos no SaúdeFoz",
+      "stat3Value": "100k+",
+      "stat3Label": "pessoas beneficiadas indiretamente em três anos"
+    },
+    "sdg": {
+      "title": "Alinhado com os Objetivos de Desenvolvimento Sustentável",
+      "item3": "ODS 3 · Saúde e bem-estar",
+      "item10": "ODS 10 · Redução das desigualdades",
+      "item17": "ODS 17 · Parcerias para a implementação"
+    },
+    "partners": {
+      "title": "Uma rede que impulsiona a mudança",
+      "body": "O projeto é construído junto a organizações internacionais (ACNUR, OIM), universidades como a UNILA, o SUS e a Secretaria Municipal de Saúde, além de ONGs e empresas responsáveis comprometidas com a inclusão.",
+      "tags": "ACNUR, OIM, UNILA, SUS, ONGs"
+    },
+    "footerTitle": "Um projeto com propósito",
+    "footerNote": "O Ponte Saúde não tem afiliação oficial com o governo brasileiro nem com instituições de saúde. Nasce do trabalho conjunto com UBS, organizações sociais e voluntariado para fortalecer o acesso e a continuidade do cuidado."
   },
   "about": {
     "title": "Sobre o SaúdeFoz",
